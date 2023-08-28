@@ -1,5 +1,227 @@
-template-repository (1.0-1) unstable; urgency=medium
+3270font (3.0.1-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream bugfix release.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Adam Borowski <kilobyte@angband.pl>  Sat, 30 Jul 2022 01:05:25 +0200
+
+3270font (3.0.0-2) unstable; urgency=medium
+
+  * Install TTF not OTF, the latter produces uneven glyphs somehow.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Fri, 08 Jul 2022 07:49:53 +0200
+
+3270font (3.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Don't run fontlint during build for now...
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sat, 02 Jul 2022 02:19:39 +0200
+
+3270font (2.3.1-2) unstable; urgency=medium
+
+  * Ignore two fontlint warnings (intersecting glyph, points at extrema).
+    Closes: #1013548.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sun, 26 Jun 2022 23:48:14 +0200
+
+3270font (2.3.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Fri, 08 Oct 2021 22:30:33 +0200
+
+3270font (2.3.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Mon, 13 Sep 2021 03:14:41 +0200
+
+3270font (2.3.0-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sun, 07 Mar 2021 21:52:28 +0100
+
+3270font (2.2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * dh 13.
+  * Bump watch file version to 4, no changes.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sun, 17 Jan 2021 20:15:11 +0100
+
+3270font (2.1.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sun, 27 Sep 2020 01:00:44 +0200
+
+3270font (2.0.4-1) unstable; urgency=medium
+
+  * New major upstream release, disguised as a point one.  Adds an imperial
+    buttload of Unicode 13 drawing characters.
+  * Give up wrt upstream tests, run fontlint ourselves.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sat, 11 Apr 2020 15:02:19 +0200
+
+3270font (2.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * dh 12.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Mon, 30 Dec 2019 21:28:35 +0100
+
+3270font (2.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Thu, 20 Jun 2019 03:41:40 +0200
+
+3270font (2.0.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Install appstream metadata.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Mon, 20 May 2019 00:25:07 +0200
+
+3270font (2.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sun, 12 Aug 2018 19:40:18 +0200
+
+3270font (1.2.23-2) unstable; urgency=medium
+
+  * Update the Fonts Team address.
+  * dh 11, R³.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Fri, 27 Apr 2018 02:50:15 +0200
+
+3270font (1.2.23-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Wed, 10 May 2017 23:28:00 +0200
+
+3270font (1.2.22-1) experimental; urgency=medium
+
+  * New upstream release.
+  * License change: it's now BSD3|SIL.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Tue, 09 May 2017 01:05:18 +0200
+
+3270font (1.2.21-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump debhelper to 10.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sun, 02 Apr 2017 05:08:03 +0200
+
+3270font (1.2.20-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sat, 21 Jan 2017 01:40:51 +0100
+
+3270font (1.2.19-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Amend patches for partial upstream fix.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sat, 05 Nov 2016 04:28:53 +0100
+
+3270font (1.2.18-1) unstable; urgency=medium
+
+  * New upstream release.  Adds Greek and all of WGL-4!
+  * Work around upstream Makefile wanting to build a sample image.
+  * Don't test non-OTF files (PFMs have a fatal error with new fontforge,
+    but we don't install those anyway).
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sun, 16 Oct 2016 04:17:52 +0200
+
+3270font (1.2.17-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sat, 20 Aug 2016 07:52:45 +0200
+
+3270font (1.2.16-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Tue, 28 Jun 2016 11:33:52 +0200
+
+3270font (1.2.15-1) unstable; urgency=medium
+
+  * New upstream release.  Adds Cyrillic et al.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Fri, 24 Jun 2016 09:14:51 +0200
+
+3270font (1.2.14-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sat, 21 May 2016 04:22:34 +0200
+
+3270font (1.2.13-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Wed, 20 Apr 2016 12:29:18 +0200
+
+3270font (1.2.12-1) unstable; urgency=medium
+
+  * New upstream release.  With a beer mug!
+
+ -- Adam Borowski <kilobyte@angband.pl>  Tue, 19 Apr 2016 21:56:50 +0200
+
+3270font (1.2.11-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Mon, 29 Feb 2016 17:04:01 +0100
+
+3270font (1.2.9-1) unstable; urgency=medium
+
+  * New upstream release.
+    + It includes the Debian logo at U+F100.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Sat, 09 Jan 2016 04:36:46 +0100
+
+3270font (1.2.8-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Thu, 07 Jan 2016 07:02:00 +0100
+
+3270font (1.2.7-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Wed, 23 Dec 2015 12:39:42 +0100
+
+3270font (1.2.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Run fontlint during build, as upstream makefile does.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Tue, 22 Dec 2015 21:09:08 +0100
+
+3270font (1.2.5-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Wed, 02 Dec 2015 23:12:19 +0100
+
+3270font (1.2.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add a watch file.
+
+ -- Adam Borowski <kilobyte@angband.pl>  Fri, 28 Aug 2015 22:28:09 +0200
+
+3270font (1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #776449)
+
+ -- Adam Borowski <kilobyte@angband.pl>  Thu, 29 Jan 2015 02:55:49 +0100
