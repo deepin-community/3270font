@@ -1,4 +1,17 @@
 #!/usr/bin/make -f
+#DH_VERBOSE = 1
 
 %:
 	dh $@
+
+override_dh_auto_build:
+	make font
+
+override_dh_auto_install:
+
+override_dh_auto_clean:
+	make clean
+	rm -f 3270Medium_HQ_Narrow.sfd
+
+override_dh_auto_test:
+	#for f in build/*f; do fontlint -i 98 -i 2 -i 5 $$f || exit 1; done
